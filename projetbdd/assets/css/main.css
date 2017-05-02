@@ -1,0 +1,35 @@
+body{
+	background-color: #DFF2F9;
+}
+
+.background{
+	border-bottom: 2px solid black;
+}
+
+.main{
+	width: 90%;
+}
+
+input[type="range"] {
+    position: relative;
+    margin-left: 1em;
+}
+input[type="range"]:after,
+input[type="range"]:before {
+    position: absolute;
+    top: 1em;
+    color: #aaa;
+}
+input[type="range"]:before {
+    left:0em;
+    content: attr(min);
+}
+input[type="range"]:after {
+    right: 0em;
+    content: attr(max);
+}
+
+.commentaire{
+    border: 1px solid black;
+    padding: 2px;
+}

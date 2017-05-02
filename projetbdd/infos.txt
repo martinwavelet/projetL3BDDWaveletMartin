@@ -1,0 +1,32 @@
+
+############ COMMANDES GIT:
+
+git clone ADRESSE
+
+git push
+git add page.php
+git commit -m "..."
+git rm " fichier" -> supprime un fichier
+git push
+
+
+
+############# PROJET :
+
+Php, base de données SQL
+	- SELECT : éxecution requete et récupérer résultat : ex bdd objets perdus -> recherche à partir d'un formulaire (POST ou GET), afficher n résultats
+	- INSERT : ajouter des lignes dans la bdd: à partir d'un formulaire
+	- DELETE/UPDATE: supprimer ou modfiier des lignes de la bdd
+
+Github: il va vérifier qui a fait quoi = PARTAGER LE TRAVAIL WESH
+
+Rapport en PDF: 
+	nom compte github
+	adresse répertoire github
+	qui as fait quoi
+	OBJECTIF DE LA BASE DE DONNEES: a quoi ca sert
+	domaine/application
+	captures d'écrans illustrant les fonctionnalités
+	workflow: organisation des différentes pages: comment on se déplace entre les pages
+
+Tout ca dans une archive: prénom-nom-WEB17-L3.zip
