@@ -32,8 +32,14 @@ if(ISSET($_SESSION["utilisateur"])){
 	echo '</table></div>';
 }
 else{
-	echo '<div class="row"><p>Vous devez être connecté pour pouvoir gérez vos jeux !<br/>
-		  <a href="connection.php"> Me connecter !</a></p></div><br/></div>';
+	echo '<div class="row"><p>Vous devez être connecté pour gérer vos jeux !<br/>'
+?>
+	<form action="connection.php" method="post">
+	<input type='hidden' name='retourpage' value='gerer.php'>
+	<input type="submit" class="button" value="Se connecter">
+	</form>
+	</div>
+<?php
 }
 
 include("includes/footer.php"); ?>

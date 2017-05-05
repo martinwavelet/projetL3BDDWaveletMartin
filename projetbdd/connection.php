@@ -6,9 +6,11 @@ if(ISSET($_POST["pseudo"]) AND ISSET($_POST["mdp"])){
 	$_SESSION["utilisateur"]= $db->querySingle('SELECT id_utilisateur FROM utilisateur WHERE pseudo="'.$_POST["pseudo"].'" AND mdp="'.$_POST["mdp"].'"');
 	$_SESSION["pseudo"]= $db->querySingle("SELECT pseudo FROM utilisateur WHERE id_utilisateur=".$_SESSION["utilisateur"]);
 
-	if(ISSET($_SESSION["utilisateur"])){ ?>
+	if(ISSET($_SESSION["utilisateur"])){ 
+		if(ISSET($_POST["retourpage"])){header('Location: '.$_POST["retourpage"]);}?>
 		<br/>
 		<div class='row'>
+			<?=$_POST["retourpage"]?>
 			<h3> Bonjour <?php echo $_SESSION["pseudo"] ?>, vous êtes bien identifié !</h3><br/>
 			<a class='button' href='index.php'> Retourner à l'acceuil </a>
 		</div>

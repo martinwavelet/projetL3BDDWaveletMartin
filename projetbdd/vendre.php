@@ -76,7 +76,14 @@ if(ISSET($_SESSION["utilisateur"])){
 }
 
 else{
-	echo '<div class="row"><p>Vous devez être connecté pour mettre un jeu en vente !<br/>
-		  <a href="connection.php"> Me connecter !</a></p></div><br/>';
+	echo '<div class="row"><p>Vous devez être connecté pour mettre un jeu en vente !<br/>'
+?>
+	<form action="connection.php" method="post">
+	<input type='hidden' name='retourpage' value='vendre.php'>
+	<input type="submit" class="button" value="Se connecter">
+	</form>
+	</div>
+<?php
 }
+
 include("includes/footer.php"); ?>

@@ -40,10 +40,12 @@ if(ISSET($_SESSION["utilisateur"])){
 
 <?php 
 }
-else{
-	echo "<a href='connection.php'>Connectez vous</a> pour écrire un commentaire.<br/><br/>";
-}
-?>
+else{ ?>
+	<form action="connection.php" method="post">
+	<input type='hidden' name='retourpage' value='utilisateur.php'>
+	<input type="submit" class="button" value="Connectez vous pour écrire un commentaire ">
+	</form>
+<?php } ?>
 
 <strong>Les commentaires reçus par <?=$nom?> :</strong><br/>
 <?php
