@@ -1,11 +1,11 @@
 <?php include("includes/header.php");
 
-if(!ISSET($_POST["id_utilisateur"])){
+if(!ISSET($_GET["id_utilisateur"])){
 	echo ("Aucun membre à afficher<br/>");
 }
 else{
 	$results = $db->query(
-	'SELECT * FROM utilisateur WHERE id_utilisateur='.$_POST["id_utilisateur"]
+	'SELECT * FROM utilisateur WHERE id_utilisateur='.$_GET["id_utilisateur"]
 	);
 
 	while ($row = $results->fetchArray()) {

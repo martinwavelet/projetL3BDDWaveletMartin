@@ -18,7 +18,7 @@ $results = $db->query(
 while ($row = $results->fetchArray()) {
     if ($row[0]) {
     	$note_moyenne = $db->querySingle("SELECT AVG(note) FROM commentaires_utilisateur WHERE id_receveur=".$row[0]);
-        echo "<tr>", "<td>", $row[1], "</td>",
+        echo "<tr>", '<td><a href="utilisateur.php?id_utilisateur='.$row[0].'">'.$row[1].'</a></td>',
 		"<td>", $row[3], "</td>",
 		"<td>", $note_moyenne, "</td>", "</tr>";
     }

@@ -23,7 +23,7 @@ if(!ISSET($_POST["nom"]) AND !ISSET($_POST["console"]) AND !ISSET($_POST["nbr_jo
         		  <td>".$row[4]." euros</td>
         		  <td>".$row[5]."</td>
         		  <td>".$row[6]."</td>
-        		  <td><form action='utilisateur.php' method='post'><input type='hidden' name='id_utilisateur' value='".$row[2]."'><input type='submit' class='button' value='Contacter ".$nom_utilisateur."'/></form></td></tr>";
+        		  <td><form action='utilisateur.php' method='get'><input type='hidden' name='id_utilisateur' value='".$row[2]."'><input type='submit' class='button' value='Contacter ".$nom_utilisateur."'/></form></td></tr>";
     	}
 	}
 	echo "</table>";
@@ -59,7 +59,7 @@ else{
         		  <td>".$row[4]." euros</td>
         		  <td>".$row[5]."</td>
         		  <td>".$row[6]."</td>
-        		  <td><form action='utilisateur.php' method='post'><input type='hidden' name='id_utilisateur' value='".$row[2]."'><input type='submit' class='button' value='Contacter ".$nom_utilisateur."'/></form></td></tr>";
+        		  <td><form action='utilisateur.php' method='get'><input type='hidden' name='id_utilisateur' value='".$row[2]."'><input type='submit' class='button' value='Contacter ".$nom_utilisateur."'/></form></td></tr>";
 				}
 			}
 }
