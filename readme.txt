@@ -26,7 +26,7 @@ Le dossier includes contient des éléments repris dans différentes pages.
 Le dossier assets contient le css, notamment une partie venant de Foundation (http://foundation.zurb.com/).
 Le dossier image contient les images utilisé, notamment la bannière.
 La base de données utilisé est "bdd.db", en SQlite 3. Elle est consultable dans sa version SQL dans le fichier "save2.Sql".
-
+Un rapport sur le projet est disponible en pdf: rapportprojet.pdf
 
 
 Afin de tester les fonctionnalités du site vous pouvez vous inscrire ou utilisez le compte suivant :
