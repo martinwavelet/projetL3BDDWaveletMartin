@@ -33,10 +33,9 @@ $db = new SQLite3('bdd.db');
     <ul class="menu">
       <?php
         if(ISSET($_SESSION["utilisateur"])){
-          $result = $db->querySingle("SELECT pseudo FROM utilisateur WHERE id_utilisateur=".$_SESSION["utilisateur"]."");
-          echo "<li><p> Bonjour ".$result."</p></li>";
+          echo "<li><p> Bonjour ".$_SESSION["pseudo"]."</p></li>";
           echo "<li><a>     </a></li>";
-          echo "<li><a class='button' href='deconnexion.php'>Déconnexion</a></li>";
+          echo "<li><a class='button' href='deconnection.php'>Déconnection</a></li>";
         }
         else{
 
